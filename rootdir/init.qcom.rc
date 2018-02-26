@@ -623,7 +623,7 @@ service hcidump /system/bin/sh /system/etc/hcidump.sh
     disabled
     oneshot
 
-service charger /sbin/chargeonlymode
+service charger /sbin/charger
     class charger
     group system graphics
     seclabel u:r:charger:s0
