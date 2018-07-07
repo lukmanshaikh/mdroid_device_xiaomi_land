@@ -122,7 +122,6 @@
          For example, a device with notification and battery lights
          that support pulsating and RGB control would set this config
          to 75. -->
-    <integer name="config_deviceLightCapabilities">79</integer>
 
     <!-- When true use the linux /dev/input/event subsystem to detect the switch changes
          on the headphone/microphone jack. When false use the older uevent framework. -->
@@ -325,7 +324,6 @@
     <!-- Default value for proximity check on screen wake
          NOTE ! - Enable for devices that have a fast response
          proximity sensor (ideally < 300ms) -->
-    <bool name="config_proximityCheckOnWake">false</bool>
     <!-- <integer name="config_proximityCheckTimeout">100</integer> -->
 
     <!-- Indicate whether to allow the device to suspend when the screen is off
