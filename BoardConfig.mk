@@ -54,6 +54,8 @@ BOARD_MKBOOTIMG_ARGS 		:= --ramdisk_offset 0x01000000 --second_offset 0x00f00000
 TARGET_KERNEL_CONFIG 		:= land_defconfig
 TARGET_KERNEL_SOURCE 		:= kernel/xiaomi/msm8937
 TARGET_EXFAT_DRIVER		:= exfat
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/gcc-8.1/bin
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-opt-linux-android-
 
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
